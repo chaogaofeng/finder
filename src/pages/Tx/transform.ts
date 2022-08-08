@@ -84,7 +84,7 @@ const convertProtoType = (protoType: string): string => {
 
   let type: string;
 
-  if (tokens[0] === "terra" || tokens[0] === "cosmos") {
+  if (tokens[0] === "gnc" || tokens[0] === "cosmos") {
     type = `${tokens[1]}/${tokens[tokens.length - 1]}`;
   } else {
     type = `${tokens[0]}/${tokens[tokens.length - 1]}`;

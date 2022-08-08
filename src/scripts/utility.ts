@@ -22,9 +22,9 @@ export function getEndpointByKeyword(keyword: string) {
     return `/blocks/${key}`;
   } else if (isTnsName(key)) {
     return `/address/${key}`;
-  } else if (key.indexOf("terravaloper") === 0) {
+  } else if (key.indexOf("gncvaloper") === 0) {
     return `/validator/${key}`;
-  } else if (key.indexOf("terra") === 0) {
+  } else if (key.indexOf("gnc") === 0) {
     return `/address/${key}`;
   } else if (key.length === 64) {
     return `/tx/${key}`;
